@@ -1,0 +1,3 @@
+/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1/build/CMakeFiles/my_project.dir
+/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1/build/CMakeFiles/edit_cache.dir
+/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1/build/CMakeFiles/rebuild_cache.dir

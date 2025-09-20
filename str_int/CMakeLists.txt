@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+project(str_int)
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+# Включение отладочной информации
+set(CMAKE_BUILD_TYPE Debug)
+
+# Добавляем все исходные файлы
+add_executable(my_project str_int.c ./src/func.c)
+
+# Указываем include директории
+target_include_directories(my_project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Исправлено: применяем опции к правильной цели my_project
+target_compile_options(my_project PRIVATE -g -O0)

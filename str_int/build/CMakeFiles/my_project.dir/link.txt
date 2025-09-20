@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/my_project.dir/str_int.c.o CMakeFiles/my_project.dir/src/func.c.o -o my_project 

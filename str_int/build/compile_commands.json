@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/pavel/MyFiles/fundamental_algorithms_mai/str_int/build",
+  "command": "/usr/bin/gcc  -I/home/pavel/MyFiles/fundamental_algorithms_mai/str_int -g -std=gnu11 -g -O0 -o CMakeFiles/my_project.dir/str_int.c.o -c /home/pavel/MyFiles/fundamental_algorithms_mai/str_int/str_int.c",
+  "file": "/home/pavel/MyFiles/fundamental_algorithms_mai/str_int/str_int.c",
+  "output": "CMakeFiles/my_project.dir/str_int.c.o"
+},
+{
+  "directory": "/home/pavel/MyFiles/fundamental_algorithms_mai/str_int/build",
+  "command": "/usr/bin/gcc  -I/home/pavel/MyFiles/fundamental_algorithms_mai/str_int -g -std=gnu11 -g -O0 -o CMakeFiles/my_project.dir/src/func.c.o -c /home/pavel/MyFiles/fundamental_algorithms_mai/str_int/src/func.c",
+  "file": "/home/pavel/MyFiles/fundamental_algorithms_mai/str_int/src/func.c",
+  "output": "CMakeFiles/my_project.dir/src/func.c.o"
+}
+]
