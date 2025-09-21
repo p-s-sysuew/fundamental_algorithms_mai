@@ -24,12 +24,22 @@ int main(int argc, char * argv[])
     
 
     char * flag = argv[2];
-    if (strcmp("-h", flag) == 0)
-    {
-        flag_h(x);
-    }
 
-    
+
+    if (strcmp("-h", flag) == 0) flag_h(x);
+    else if (strcmp("-p", flag) == 0) flag_p(x);
+    else if (strcmp("-s", flag) == 0) flag_s(x);
+    else if (strcmp("-e", flag) == 0) flag_e(x);
+    else if (strcmp("-a", flag) == 0) flag_a(x);
+    else if (strcmp("-f", flag) == 0) flag_f(x);
+    else
+    {
+        printf("Недопустимый фид флага\n");
+        printf("Используйте один из следующих флагов:\n");
+        menu();
+
+    }
+    printf("\n");
     return 0;
     
 }

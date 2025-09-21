@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"target_compile_options",
 			"target_include_directories"
 		],
@@ -32,11 +33,17 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 17,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 14,
 				"parent" : 0
@@ -52,18 +59,18 @@
 					"fragment" : "-g -std=gnu11"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"fragment" : "-g"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"fragment" : "-O0"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1"
 				}
 			],
@@ -96,6 +103,11 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lm",
+				"role" : "libraries"
 			}
 		],
 		"language" : "C"

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "my_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-my_project-Debug-0f97ef249e5f91e7f43b.json",
+					"jsonFile" : "target-my_project-Debug-813183cfebaa77e171a9.json",
 					"name" : "my_project",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1/build",
+		"build" : "/home/pavel/MyFiles/fundamental_algorithms_mai/build",
 		"source" : "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l1"
 	},
 	"version" : 

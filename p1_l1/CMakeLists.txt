@@ -16,6 +16,6 @@ target_include_directories(my_project PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 # Исправлено: применяем опции к правильной цели my_project
 target_compile_options(my_project PRIVATE -g -O0)
 
-
-
+# ДОБАВЬТЕ ЭТУ СТРОКУ - линковка математической библиотеки
+target_link_libraries(my_project m)
 
