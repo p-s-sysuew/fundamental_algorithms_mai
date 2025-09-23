@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/build",
+  "command": "/usr/bin/gcc  -I/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2 -g -std=gnu11 -g -O0 -o CMakeFiles/my_project.dir/main.c.o -c /home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/main.c",
+  "file": "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/main.c",
+  "output": "CMakeFiles/my_project.dir/main.c.o"
+},
+{
+  "directory": "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/build",
+  "command": "/usr/bin/gcc  -I/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2 -g -std=gnu11 -g -O0 -o CMakeFiles/my_project.dir/src/functions.c.o -c /home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/src/functions.c",
+  "file": "/home/pavel/MyFiles/fundamental_algorithms_mai/p1_l2/src/functions.c",
+  "output": "CMakeFiles/my_project.dir/src/functions.c.o"
+}
+]

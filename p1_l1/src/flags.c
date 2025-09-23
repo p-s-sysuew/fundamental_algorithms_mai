@@ -66,7 +66,7 @@ void flag_s(int x)
 }
 
 
-void flag_e(int x)
+void flag_e(const int x)
 {
     
     if (x > 10)
