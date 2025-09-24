@@ -43,6 +43,7 @@ void flag_p(int x)
 void flag_s(int x)
 {
     
+    int x1 = x;
     char buf[33];
     char * p = buf + 32;
     int r;
@@ -55,7 +56,7 @@ void flag_s(int x)
         x /= 16;
     }
     p++;
-    printf("Число %d в десятичное ситеме равно числу \n\t");
+    printf("Число %d в десятичное ситеме равно числу \n\t", x1);
     while(*p)
     {
         printf("%c ", p[0]);
