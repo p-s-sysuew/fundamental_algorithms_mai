@@ -34,24 +34,9 @@ void flag_t(double eps, double a, double b, double c)
 {
     printf("составляем треугольник со сторонами %f, %f и %f:\n\n", a, b, c);
     if (a >= b && a >= c)
-    {
-        if (b + c - a >= eps)
-            printf("Можно составить треугольник\n");
-        else
-            printf("Нельзя составить треугольник\n");
-    }
+        triangle(a, b, c, eps);
     else if (b >= a && b >= c)
-    {
-        if (a + c - b >=eps)
-            printf("Можно составить треугольник\n");
-        else
-            printf("Нельзя составить треугольник\n");
-    }
+        triangle(b, a, c, eps);
     else if (c >= a && c >= b)
-    {
-        if (a + b - c >= eps)
-            printf("Можно составить треугольник\n");
-        else
-            printf("Нельзя составить треугольник\n");
-    }
+        triangle(c, b, a, eps);
 }

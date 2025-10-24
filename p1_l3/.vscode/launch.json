@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/my_project",
-            "args": ["-t", "0.00000001" , "3", "2", "4"],
+            "args": ["-m", "1" ,"2"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

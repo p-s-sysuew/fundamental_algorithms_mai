@@ -4,14 +4,18 @@
 #include "./include/functions.h"
 
 
-int main(void)
+int main()
 {
     int t; // Колчиство запросов
     long long n, max_number = -1; // Данный введёный номер и максимальный номер из введёных
 
     printf("Введите количество запросов >> ");
     t = int_scanf(); 
-    long long numbers[t]; // Массив, состоящий из введёных чисел
+    if (t > 50) {
+        printf("Число запросов не должно быть больше 50\n");
+        exit(1);
+    }
+    long long numbers[1000]; // Массив, состоящий из введёных чисел
     
     for (int i = 0; i < t; i++)
     {
@@ -22,7 +26,7 @@ int main(void)
     }
     printf("\n");
 
-    long long simple_numbers[max_number];  // Массив, состоящий из простых чисел
+    long long simple_numbers[1000];  // Массив, состоящий из простых чисел
     func(max_number, simple_numbers); // Находим протсые числа и запоняем массив
     
 

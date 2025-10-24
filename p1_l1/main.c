@@ -9,21 +9,22 @@ int main(int argc, char * argv[])
     if (argc  != 3)
     {
         printf("Должно быть введено целое число и один из флагов\n");
-        printf("Пример: main.c 12 -p\n\n");
+        printf("Пример: main.c -p 12\n\n");
         menu();
         exit(1);
     }
 
-    char * str_x = argv[1];
+
+    char * str_x = argv[2];
     if (!check(str_x)) 
     {
-        printf("Должно быть введено целое число!\n");
+        printf("Должно быть введено допустимое целое число!\n");
         exit(2);
     }
     int x = str_int(str_x);
     
 
-    char * flag = argv[2];
+    char * flag = argv[1];
 
 
     if (strcmp("-h", flag) == 0) flag_h(x);

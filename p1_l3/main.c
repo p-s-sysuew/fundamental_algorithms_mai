@@ -3,13 +3,12 @@
 #include <string.h>
 #include "./include/functions.h"
 
-
 int main(int argc, char * argv[])
 {
     if (argc < 2)
     {
         printf("Программа должна быть вызвана следующим образом:\n");
-        printf("    ./my_project (флаг) (остлаьные значения)");
+        printf("    ./my_project (флаг) (остальные значения)\n");
         menu();
         exit(1);
     }
@@ -41,7 +40,7 @@ int main(int argc, char * argv[])
         double b = str_double(str_b);
         double c = str_double(str_c);
 
-        flag_q(eps, a, b, c);      
+        flag_q(eps, a, b, c);
     } 
     else if (strcmp("-m", flag) == 0)
     {
@@ -51,10 +50,11 @@ int main(int argc, char * argv[])
             printf("Должно быть введено 2 целых значения!\n");
             exit(3);
         }
-        if (!check_int(str_a) 
-        ||  !check_int(str_b))
+        str_a = argv[2];
+        str_b = argv[3];
+        if (!check_int(str_a) ||  !check_int(str_b))
         {
-            printf("Введёные числа должны быть целыми!\n");
+            printf("Введёные числа должны быть целыми и допустимого размера!\n");
             exit(4);
         }
 
@@ -69,7 +69,7 @@ int main(int argc, char * argv[])
         char * str_eps, * str_a, * str_b, * str_c;
         if (argc != 6)
         {
-            printf("Должно быть введено 4 вещественных значения!\n");
+            printf("Должно быть введено 4 вещественных значения допустимого размера!\n");
             exit(1);
         }
 
@@ -80,7 +80,7 @@ int main(int argc, char * argv[])
         || !check_double(str_b) 
         || !check_double(str_c))
         {
-            printf("Введёные числа должны быть вещественными!\n");
+            printf("Введёные числа должны быть вещественными допустимого размера!\n");
             exit(2);
         }
 

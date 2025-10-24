@@ -6,14 +6,21 @@
 bool check(char * str)
 {
     if (str[0] == '-') str++;
+    if (strlen(str) > 9)
+    {
+        printf("Введено сильно больше значение\n");
+        return false;
+    }
 
     while(* str)
     {
-        if (!isdigit(str[0])) return false;
+        if (!isdigit(str[0])) 
+            return false;
         str++;
     }
     return true;
 }
+
 
 
 int str_int(char * str)
@@ -35,7 +42,7 @@ int str_int(char * str)
 }
 
 
-void menu(void)
+void menu()
 {
     printf(
     "-h - вывести в консоль натуральные числа в пределах 100 включительно,\n"

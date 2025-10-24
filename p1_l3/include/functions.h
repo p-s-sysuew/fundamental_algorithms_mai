@@ -17,6 +17,9 @@ void flag_m(int a, int b);
 void flag_t(double eps, double a, double b, double c);
 
 
+void triangle(double max_value, double sredn_value, double min_value, double eps) ;
+
+
 
 
 #endif

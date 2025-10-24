@@ -13,7 +13,8 @@ int int_scanf()
     while(((scanf("%d", &number)) != 1) || (number < 1))
     {
         while (getchar() != '\n');
-        printf("Должно быть введено натуральное число! Повторите ввод >> ");
+        
+        printf("Должно быть введено допустимое натуральное число! Повторите ввод >> ");
     }
     while (getchar() != '\n');
         
@@ -22,27 +23,25 @@ int int_scanf()
 
 
 // Заполняет данный массив простыми числами до определённого номера
-int func(const int n, long long simple_numbers[])
+int func(const int n, long long * simple_numbers)
 {
-    int count = 0;
-    for (int i = 1; count < n; i++)
-        if (simple(i))
-        {
-            simple_numbers[count] = i;
-            count++;
-        }
-    
+    int len = 0;
+    simple_numbers[0] = 2;
+    int len1;
+    for (int i = 2; len < n; i++)
+        len = simple(i, simple_numbers, len);
 }
 
 
 // Определяет, простое ли число
-bool simple(int x)
+int simple(int x, long long * simple_numbers, int len)
 {
-    double d = pow(x, 0.5);
-    for (int i = 2; i <= d; i++)
-        if (x % i == 0)
-            return false;
-    return true;
+    for (int i = 0; i < len; i++)
+        if (x % simple_numbers[i] == 0)
+            return len;
+    simple_numbers[len] = x;
+    len++;
+    return len;
 }
 
 

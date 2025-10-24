@@ -5,5 +5,6 @@
         "stdbool.h": "c",
         "ctype.h": "c",
         "string.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }
